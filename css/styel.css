@@ -1,106 +1,169 @@
-*{margin: 0;padding: 0;}
-a{text-decoration: none; color: #fff;}
-li{list-style: none ;}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+li {
+  list-style: none;
+}
 
 /* header */
-nav{
-    background-color: #066E71;
-    display: flex;
-    position: fixed;
+header {
     width: 100%;
     height: 101px;
-    font-family: "Noto Sans KR", sans-serif;
+    background-color: #066e71;
+    position: fixed;
+    z-index: 999;
 }
-
-.loro_img{
-    margin-top: 23px;
-    margin-left: 383px;
-}
-
-.logo{
-    margin-top: 41px;
-    margin-left: -4px;
-}
-
-.nav_txt{
+nav {
+    width: 1180px;
+    margin: 0 auto;
     display: flex;
-    padding-top: 38px 0px;
-    margin-left: 105.5px;
+    justify-content: space-between;
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
 }
-
-.nav_txt ul a{
-    font-size: 18px;
-    line-height: 101px;
-    padding: 38px 34.5px;
-}
-
-.nav_txt ul li{
+.menubar {
     display: none;
 }
 
-.nav_txt ul:hover a{
-    text-decoration: underline 1px;
+.loro_img {
+  
 }
 
-.nav_txt2_box{
-    width: 118px;
-    height: 33px;
-    border: 1px solid #fff;
-    border-radius: 18px;
-    margin: 33px 0px 0px 167.5px;
-    text-align: center;
-
+.logo {
+  margin-top: 41px;
+  margin-left: -4px;
 }
 
-.nav_txt2_box a{
-    color: #fff;
+.nav_txt {
+    display: flex;
+}
+
+.nav_txt>ul {
+/* padding: 0px 20px; */
+}
+
+.nav_txt>ul li {
+    width:140px ;
+    padding: 20px 0px;
+    display: none;
+}
+
+.nav_txt ul>a {
+    width:140px ;
+    display: block;
+  font-size: 18px;
+  line-height: 101px;
+ 
+}
+.nav_txt2_box a {
     font-size: 16px;
-    padding: 5px 29px;
-    border-radius: 18px;
-    line-height: 33px;
+    line-height: 101px;
 }
 
-.nav_txt2_box:hover{
-    background-color: #fff
+.nav_txt ul a:hover{
+    text-decoration: underline;
 }
 
-.nav_txt2_box:hover a{
-    color: #066E71;
-    font-weight: bold;
+
+.height101 {
+    width: 100%;
+    height: 101px;
 }
 
 /* banner */
-.banner{
-    width: 100%;
-    height: 700px;
-    background-color: antiquewhite;
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+.swiper {
+  width: 100%;
+  height: 700px;
+}
+
+.mainSwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua
+}
+
+.mainSwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width:480px) {
+    header {
+        width: 100%;
+        height: 101px;
+        background-color: #066e71;
+        position: fixed;
+        z-index: 999;
+    }
+    nav {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Noto Sans KR", sans-serif;
+        text-align: left;
+    }
     
-}
+    .loro_img {
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .menubar {
+        display: block;
+        position:absolute;
+        top:50%;
+        right:30px;
+        transform: translate(-50%,-50%);
+    }
 
-.banner_img{
-    height: 100%;
-    height: 700px;
-    position: fixed;
-}
+    
+    .nav_txt {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+    }
 
-.banner_page1{
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    background: url('../img/banner/banner1.jpg') no-repeat center center;
-}
-
-.banner_page2{
-    width: 100%;
-    background: url('/img/banner/banner3.jpg') no-repeat center;
-}
-
-.banner_page3{
-    width: 100%;
-    background: url('/img/banner/banner4.jpg') no-repeat center;
-}
-
-.banner_page4{
-    width: 100%;
-    background: url('/img/banner/banner1.jpg') no-repeat center;
+    .nav_txt a {
+        color: #066e71;
+    }
+    
+    .nav_txt>ul {
+    /* padding: 0px 20px; */
+    }
+    
+    .nav_txt>ul li {
+       
+        display: block;
+    }
+    
+    .nav_txt ul>a {
+      
+     
+    }
+    .nav_txt2_box a {
+       
+    }
+    
+    .nav_txt ul a:hover{
+        text-decoration: underline;
+    }
 }

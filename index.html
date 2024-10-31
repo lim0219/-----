@@ -1,80 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <!-- 스크립트 -->
-        <script src="./JS/jquery-3.7.1.min.js"></script>
-        <!-- <script src="./JS/jquery-ui.min.js"></script> -->
-        <!-- 스타일 -->
-        <link rel="stylesheet" href="./css/styel.css">
-         <!-- noto sans kr폰트 -->
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- noto sans kr폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Yusei+Magic&display=swap"
+        rel="stylesheet">
+    <!-- 스크립트 -->
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper.js" defer></script>
+    <!-- <script src="./JS/jquery-ui.min.js"></script> -->
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="./css/styel.css">
 </head>
+
 <body>
     <!-- header -->
-    <nav>
-        <div class="loro_img">
-            <img src="./img/rogo/로고 이미지.png" alt="" width="74px">
-        </div>
-        <div class="logo">
-            <img src="./img/rogo/로고2.png" alt="" width="77px">
-        </div>
-        <ul class="nav_txt">
-            <ul class="menu1">
-                <a href="#none" class="menu_1">메뉴</a>
-                <li><a href="#none">신메뉴</a></li>
-                <li><a href="#none">메뉴</a></li>
-                <li><a href="#none">사이드메뉴</a></li>
-                <li><a href="#none">E-쿠폰</a></li>
-                <li><a href="#none">제품 정보</a></li>
-            </ul>
-
-            <ul class="menu2">
-                <a href="#none" class="menu_2">매장찾기</a>
-                <li><a href="#none">매장찾기</a></li>
-            </ul>
-
-            <ul class="menu3">
-                <a href="#none" class="menu_3">브랜드</a>
-                <li><a href="#none">임사말</a></li>
-                <li><a href="#none">브랜드소개</a></li>
-                <li><a href="#none">브랜드스토리</a></li>
-                <li><a href="#none">언론보도</a></li>
-            </ul>
-
-            <ul class="menu4">
-                <a href="#none" class="menu_4">창업안내</a>
-                <li><a href="#none">후다닭 노하우</a></li>
-                <li><a href="#none">창업 비용/절차</a></li>
-                <li><a href="#none">우선입점/추천 상권</a></li>
-            </ul>
-
-            <ul class="menu5">
-                <a href="#none" class="menu_5">후다닭 소식</a>
-                <li><a href="#none">이벤트</a></li>
-                <li><a href="#none">새소식</a></li>
-                <li><a href="#none">채용안내</a></li>
-                <li><a href="#none">고객의 소리</a></li>
-                <li><a href="#none">제휴문의</a></li>
-            </ul>
-        </ul>
-        <div class="nav_txt2_box">
-            <a href="#none">점주공간</a>
+     <header>
+        <nav>
+            <div class="loro_img">
+                <img src="./img/rogo/로고 이미지.png" alt="" width="74px">
             </div>
-    </nav>
-
+            <button class="menubar">button</button>
+            
+            <ul class="nav_txt">
+                <ul class="menu1">
+                    <a href="#none" class="menu_1">메뉴</a>
+                    <li><a href="#none">신메뉴</a></li>
+                    <li><a href="#none">메뉴</a></li>
+                    <li><a href="#none">사이드메뉴</a></li>
+                    <li><a href="#none">E-쿠폰</a></li>
+                    <li><a href="#none">제품 정보</a></li>
+                </ul>
+    
+                <ul class="menu2">
+                    <a href="#none" class="menu_2">매장찾기</a>
+                    <li><a href="#none">매장찾기</a></li>
+                </ul>
+    
+                <ul class="menu3">
+                    <a href="#none" class="menu_3">브랜드</a>
+                    <li><a href="#none">임사말</a></li>
+                    <li><a href="#none">브랜드소개</a></li>
+                    <li><a href="#none">브랜드스토리</a></li>
+                    <li><a href="#none">언론보도</a></li>
+                </ul>
+    
+                <ul class="menu4">
+                    <a href="#none" class="menu_4">창업안내</a>
+                    <li><a href="#none">후다닭 노하우</a></li>
+                    <li><a href="#none">창업 비용/절차</a></li>
+                    <li><a href="#none">우선입점/추천 상권</a></li>
+                </ul>
+    
+                <ul class="menu5">
+                    <a href="#none" class="menu_5">후다닭 소식</a>
+                    <li><a href="#none">이벤트</a></li>
+                    <li><a href="#none">새소식</a></li>
+                    <li><a href="#none">채용안내</a></li>
+                    <li><a href="#none">고객의 소리</a></li>
+                    <li><a href="#none">제휴문의</a></li>
+                </ul>
+            </ul>
+            <div class="nav_txt2_box">
+                <a href="#none">점주공간</a>
+            </div>
+        </nav>
+     </header>
+   
+    <div class="height101">
+    </div>
     <!-- banner -->
-    <div class="banner">
-        <ul class="banner_img">
-            <li class="banner_page1"></li>
-            <li class="banner_page2"></li>
-            <li class="banner_page3"></li>
-            <li class="banner_page4"></li>
-        </ul>
+    <!-- Swiper -->
+    <div class="swiper mainSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </div>
 </body>
+
 </html>
